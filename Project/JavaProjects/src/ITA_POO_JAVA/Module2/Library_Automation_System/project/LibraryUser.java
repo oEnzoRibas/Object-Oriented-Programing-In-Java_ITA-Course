@@ -30,7 +30,7 @@ public class LibraryUser {
         for (Book title : rentedBooks) {
             System.out.printf("""
                     %s
-                     """,title.title);
+                    """,title.title);
         }
         System.out.println("""
                 
