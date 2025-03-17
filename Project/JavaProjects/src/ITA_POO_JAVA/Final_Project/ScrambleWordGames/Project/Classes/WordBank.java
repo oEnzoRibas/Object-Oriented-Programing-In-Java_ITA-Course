@@ -8,14 +8,14 @@ import java.util.Scanner;
 import static ITA_POO_JAVA.Final_Project.ScrambleWordGames.Exceptions.Erros.printERROR;
 
 public class WordBank {
-    public static void main(String[] args) {
 
-    //public static String returnWord() {
+    public static String returnWord() {
         File wordFile = new File("Final_Project/ScrambleWordGames/words.txt");
         Scanner file = null;
         int k = 0;
+        Random r = new Random();
+        int key;
         HashMap<Integer, String> wordsHMap = new HashMap<>();
-
         try {
             file = new Scanner(wordFile);
         } catch (FileNotFoundException e) {
@@ -30,14 +30,9 @@ public class WordBank {
         } catch (NullPointerException e) {
             printERROR(e);
         }
-
-        Random r = new Random();
-        int key = r.nextInt(wordsHMap.size());
-        System.out.println(wordsHMap.get((key)));
-        System.out.println(key);
+        key = r.nextInt(wordsHMap.size());
         // wordsHMap.forEach((key, val) -> System.out.printf("%s = %s%n", key, val));
-        Math.random();
-       // return "";
+       return wordsHMap.get((key));
     }
     }
 
