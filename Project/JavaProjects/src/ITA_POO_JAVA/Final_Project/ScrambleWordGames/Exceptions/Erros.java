@@ -1,4 +1,4 @@
-package ITA_POO_JAVA.Final_Project.ScrambleWordGames.Errors;
+package ITA_POO_JAVA.Final_Project.ScrambleWordGames.Exceptions;
 
 public class Erros {
     public static void printERROR(Exception e){
